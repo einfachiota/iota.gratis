@@ -78,15 +78,12 @@ app.post("/pay_tokens", function (req, res) {
         return
     }
     let address = req.body.address;
-    let value = req.body.value || 0;
+    let value = 1000;
     //limit message length to 1 tx
     let message = req.body.message.slice(0, 1093) || 'EINFACHIOTA';
     let tag = req.body.tag || 'EINFACHIOTA';
     console.log("address", address)
     console.log("value", value)
-    if (value > 1000) {
-        value = 1000
-    }
     let payoutObject = {
         //required
         address: address,
