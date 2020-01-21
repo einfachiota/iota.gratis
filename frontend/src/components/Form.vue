@@ -15,40 +15,7 @@
         v-model="ruleForm.address"
         type="text"
         autocomplete="off"
-        :placeholder="`IOTA ${network} Addresse`"
-      />
-    </el-form-item>
-    <el-form-item
-      label="IOTA Menge"
-      prop="value"
-    >
-      <input
-        id="myRange"
-        type="range"
-        min="0"
-        max="1000"
-        value="10"
-        class="slider"
-        @input="changePayoutValue"
-        @change="changePayoutValue"
-      >
-      <el-input
-        v-model="ruleForm.value"
-        type="number"
-        autocomplete="off"
-        placeholder="1"
-      />
-    </el-form-item>
-    <el-form-item
-      label="Nachricht"
-      prop="message"
-    >
-      <el-input
-        v-model="ruleForm.message"
-        type="text"
-        maxlength="1093"
-        autocomplete="off"
-        placeholder="Nachricht"
+        :placeholder="`Füge hier deine IOTA Empfänger Adress ein`"
       />
     </el-form-item>
     <div v-if="payout_sent && txhash.length !== 81">
@@ -99,7 +66,7 @@
         type="primary"
         @click="send('ruleForm')"
       >
-        Sende!
+        Gratis IOTA anfordern!
       </el-button>
     </el-form-item>
     <router-link to="about">

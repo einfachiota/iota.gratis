@@ -8,11 +8,7 @@
       class="nav-item nav-item--logo"
       exact-active-class="active"
     >
-      <img
-        alt="einfachIOTA"
-        class="logo"
-        src="../assets/logo.svg"
-      >
+       <span>IOTA.gratis</span>
     </router-link>
 
     <div
@@ -37,7 +33,7 @@
         active-class="active"
         @click.native="navStateOpen = false"
       >
-        <span>Faucet</span>
+        <span>Home</span>
       </router-link>
     </div>
   </nav>

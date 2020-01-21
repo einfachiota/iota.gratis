@@ -39,15 +39,16 @@
         <h4>Partner</h4>
         <div class="divider" />
         <a
-          href="https://powsrv.io/"
-          target="_blank"
-          class="footer-main-link"
-        >powsrv.io</a>
-        <a
           href="https://tanglebay.org/forum/"
           target="_blank"
           class="footer-main-link"
         >Tanglebay.org</a>
+
+        <a
+          href="https://iotashops.com/"
+          target="_blank"
+          class="footer-main-link"
+        >IOTAshops.com</a>
       </div>
       <div class="footer-main">
         <h4>IOTA</h4>

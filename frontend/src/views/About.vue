@@ -14,9 +14,9 @@
         <div>
           <a
             target="_blank"
-            href="https://github.com/einfachiota/faucet.einfachIOTA.de"
+            href="https://github.com/einfachiota/iota.gratis"
             rel="noreferrer"
-          >Dieses Faucet auf Github.</a>
+          >IOTA.gratis Code auf Github.</a>
           <br>
           <br>Im Hintergrund läuft das
           <a
@@ -24,9 +24,6 @@
             href="https://github.com/machineeconomy/iota-payment"
             rel="noreferrer"
           >iota-payment Module</a>.
-          <br>Nicht mehr benötigte Tokens können unter
-          <h4>Fülle das Faucet</h4>wieder zurückgesendet werden,
-          <br>damit sie dann wieder für andere verfügbar sind.
         </div>
       </div>
     </div>

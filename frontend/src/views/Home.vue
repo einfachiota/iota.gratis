@@ -2,11 +2,8 @@
   <div class="home">
     <div class="hero">
       <h1 class="heading">
-        IOTA {{ network }} Faucet
+        Hol dir deine ersten IOTA Token gratis!
       </h1>
-      <p class="sub-heading">
-        Sende einfach IOTA {{ network }} Tokens!
-      </p>
     </div>
 
     <div class="section section-background">
@@ -17,8 +14,8 @@
     </div>
     <div class="section">
       <div class="container">
-        <h2>Fülle das Faucet</h2>
-        <iota-payment>Sende {{ network }} IOTA</iota-payment>
+        <h2>Fülle den Topf</h2>
+        <iota-payment>Spende IOTA</iota-payment>
       </div>
     </div>
   </div>
