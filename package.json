@@ -1,0 +1,18 @@
+{
+  "name": "faucet.einfachiota.de",
+  "version": "0.0.1",
+  "description": "IOTA Devnet faucet",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "einfachIOTA",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "iota-payment": "0.0.26",
+    "zeromq": "^5.2.0"
+  }
+}
