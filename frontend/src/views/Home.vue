@@ -6,14 +6,14 @@
       </h1>
     </div>
 
-    <div class="section section-background">
+    <div class="section">
       <div class="container">
-        <p>Verfügbare Tokens: {{ total_tokens }}</p>
         <Form />
       </div>
     </div>
     <div class="section">
       <div class="container">
+        <p class="tokens">Verfügbare Tokens: {{ total_tokens }}</p>
         <h2>Fülle den Topf</h2>
         <iota-payment>Spende IOTA</iota-payment>
       </div>
@@ -61,9 +61,15 @@ export default {
 }
 .home {
   text-align: center;
+  color: #fff;
+  height: calc(100vh - 60px);
 }
 .hero {
   margin: 0 10px;
+}
+
+.heading {
+  margin-top: 15vh;
 }
 .section {
   padding: 80px 0;
@@ -92,17 +98,22 @@ export default {
     border: 0;
     border-radius: 8px;
     outline: none;
-    color: #fff;
+    color: var(--light);;
     font-size: 24px;
     line-height: 29px;
     text-decoration: none;
-    background-color: var(--primary);
-    box-shadow: var(--primary);
+    background-color: var(--gratis-yellow);
+    box-shadow: var(--light);
     cursor: pointer;
     &:hover {
-      background-color: var(--primary-darken);
+      background-color: var(--gratis-yellow-light);
     }
   }
+}
+
+.tokens {
+  font-size: 2em;
+  padding: 20px 30px;
 }
 @media only screen and (max-width: 740px) {
   .hero {

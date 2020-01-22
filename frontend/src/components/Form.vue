@@ -8,16 +8,18 @@
     label-position="top"
   >
     <el-form-item
-      :label="`IOTA ${network} Addresse`"
       prop="address"
     >
       <el-input
+        class="address_input"
         v-model="ruleForm.address"
         type="text"
         autocomplete="off"
         :placeholder="`Füge hier deine IOTA Empfänger Adress ein`"
       />
     </el-form-item>
+    <p>IOTA ist gebührenfrei!</p>
+
     <div v-if="payout_sent && txhash.length !== 81">
       <p>
         Du kannst die Transaktion auf <a
@@ -69,15 +71,13 @@
         Gratis IOTA anfordern!
       </el-button>
     </el-form-item>
-    <router-link to="about">
+    <router-link class="link" to="about">
       Wie funktioniert das?
     </router-link>
     <div>
       <br>
-      IOTA ist gebührenfrei!
+      <a href="https://trinity.iota.org/" target="_blank">Hol dir das IOTA Trinity Wallet</a>
       <br>
-      <br>
-      Daten können ohne den Besitz von IOTA Tokens versendet werden!
     </div>
   </el-form>
 </template>
@@ -192,18 +192,22 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss">
 form {
   display: flex;
   flex-direction: column;
 }
-input {
-  width: 50%;
-  height: 60px;
-  margin: 0 auto;
-  font-size: 0.8em;
-  text-align: center;
+.address_input {
+  .el-input__inner {
+    width: 100%;
+    height: 80px;
+    margin: 20px auto;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;
+  }
 }
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: gray;
@@ -228,26 +232,11 @@ a {
   font-weight: 300;
   line-height: 20px;
   white-space: nowrap;
-  color: var(--dark);
+  color: var(--light);
   cursor: pointer;
   &:hover {
-    color: var(--primary);
+    color: var(--iota-yellow);
   }
-}
-button {
-  margin: 0 auto;
-  max-width: 500px;
-  margin-top: 20px;
-  padding: 20px 30px;
-  border: 0;
-  border-radius: 8px;
-  outline: none;
-  color: #fff;
-  font-size: 24px;
-  line-height: 29px;
-  text-decoration: none;
-  box-shadow: var(--primary);
-  cursor: pointer;
 }
 
 .slider {

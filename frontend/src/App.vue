@@ -28,6 +28,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--dark);
+  background-image: url('~@/assets/background.svg');
+  background-size:cover;
+  height: 100vh;
 }
 h1,
 h2,
@@ -60,6 +63,8 @@ p {
   --primary-darken: #03a3af;
   --secondary: #0b5d9e;
   --secondary-2: #5ab0b2;
+  --gratis-yellow: rgba(231, 197, 75, 0.933);
+  --gratis-yellow-light: rgb(231, 197, 89);
   --dark: #3d4449;
   --darker: #0f3535;
   --gray: #e2e2e2;
@@ -92,10 +97,10 @@ p {
   border: none !important;
 }
 .el-button--primary {
-  background-color: var(--primary) !important;
+  background-color: var(--gratis-yellow) !important;
   color: var(--white) !important;
   &:hover {
-    background-color: var(--primary-darken) !important;
+    background-color: var(--gratis-yellow-light) !important;
   }
 }
 button.el-button.el-button--light {

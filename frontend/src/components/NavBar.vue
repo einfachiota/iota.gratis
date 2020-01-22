@@ -8,7 +8,7 @@
       class="nav-item nav-item--logo"
       exact-active-class="active"
     >
-       <span>IOTA.gratis</span>
+      <img alt="einfachIOTA" class="logo" src="../assets/iota-gratis.svg" />
     </router-link>
 
     <div
@@ -69,8 +69,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--white);
-  border-bottom: 5px solid var(--primary);
   transition: all 200ms ease-in-out;
   .menu-btn {
     display: none;
@@ -88,7 +86,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--dark);
+    color: var(--light);
     font-family: "Roboto Slab";
     font-weight: bold;
     text-decoration: none;
@@ -102,7 +100,7 @@ export default {
       opacity: 1;
       img.logo {
         width: auto;
-        height: 80px;
+        height: 50px;
         transition: all 200ms ease-in-out;
       }
     }
@@ -119,7 +117,7 @@ export default {
     &.active {
       opacity: 1;
       background-color: var(--black_5);
-      color: var(--primary);
+      color: var(--light);
       &:before {
         content: "";
         position: absolute;
@@ -128,7 +126,7 @@ export default {
         height: 10px;
         width: 50px;
         border-radius: var(--border-radius);
-        background-color: var(--primary);
+        background-color: var(--gratis-yellow);
       }
     }
     &:hover {

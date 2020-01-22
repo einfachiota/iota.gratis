@@ -13,8 +13,6 @@
             src="../assets/logo.svg"
           >
         </router-link>
-        <p>IOTA einfach erklärt.</p>
-        <p>Unsere Aufgabe ist es, deutschsprachigen Inhalt rund um IOTA bereitzustellen und IOTA in einfacher Sprache zu erklären.</p>
       </div>
       <div class="footer-main">
         <h4>einfachIOTA.de</h4>
@@ -49,6 +47,11 @@
           target="_blank"
           class="footer-main-link"
         >IOTAshops.com</a>
+        <a
+          href="https://iota-news.com/"
+          target="_blank"
+          class="footer-main-link"
+        >iota-news.com</a>
       </div>
       <div class="footer-main">
         <h4>IOTA</h4>
@@ -131,7 +134,7 @@
       margin-right: 0;
     }
     .logo {
-      height: 100px;
+      height: 150px;
     }
     h4 {
       font-size: 20px;
