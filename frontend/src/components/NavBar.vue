@@ -9,9 +9,16 @@
       exact-active-class="active"
     >
       <img
-        alt="einfachIOTA"
-        class="logo"
+        v-if="this.$i18n.locale == 'de'"
+        alt="logo" 
+        class="logo" 
         src="../assets/iota-gratis.svg"
+      >
+      <img
+        v-else
+        alt="logo" 
+        class="logo" 
+        src="../assets/iota-credit.svg"
       >
     </router-link>
 
@@ -74,6 +81,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   transition: all 200ms ease-in-out;
+  margin-top: 80px;
   .menu-btn {
     display: none;
   }
