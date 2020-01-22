@@ -94,6 +94,33 @@
           class="footer-main-link"
         >Github</a>
       </div>
+
+      <div class="footer-bottom-col">
+        <div
+          class="lang"
+          @click="switchLanguage()"
+        >
+          <!-- <span>Switch Language </span> -->
+          <img
+            v-if="this.$i18n.locale != 'de'"
+            alt="lang" 
+            class="logo" 
+            src="../plugins/ger-flag.png" 
+            contain   
+            height="20rm"
+          >
+          <img
+            v-else
+            alt="lang" 
+            class="logo" 
+            src="../plugins/us-flag.png" 
+            contain   
+            height="20rm"
+          >
+        </div>
+      </div>
+
+
       <div class="footer-bottom-col">
         <router-link
           to="imprint"
@@ -111,6 +138,27 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+	mounted() {
+		console.log('mounted');
+		let userLang = navigator.language || navigator.userLanguage; 
+		if(userLang.slice(0,2) == 'de'){
+			this.$i18n.locale = 'de';
+		}
+	},
+	methods: {
+		switchLanguage(){
+			if(this.$i18n.locale == 'de'){
+				this.$i18n.locale = 'en';
+			} else {
+				this.$i18n.locale = 'de';
+			}
+		}
+	}
+};
+</script>
 
 <style lang="scss">
 .footer {

@@ -8,7 +8,11 @@
       class="nav-item nav-item--logo"
       exact-active-class="active"
     >
-      <img alt="einfachIOTA" class="logo" src="../assets/iota-gratis.svg" />
+      <img
+        alt="einfachIOTA"
+        class="logo"
+        src="../assets/iota-gratis.svg"
+      >
     </router-link>
 
     <div
