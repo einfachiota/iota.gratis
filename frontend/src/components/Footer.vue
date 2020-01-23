@@ -16,67 +16,67 @@
         </a>
       </div>
       <div class="footer-main">
-        <h4>einfachIOTA</h4>
+        <h4><i18n path="footer.col_1.title" /></h4>
         <div class="divider" />
         <a
           href="https://www.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-        >Webseite</a>
+        ><i18n path="footer.col_1.link1" /></a>
         <a
           href="https://blog.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-        >Blog</a>
+        ><i18n path="footer.col_1.link2" /></a>
         <a
           href="https://magazin.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-        >Magazin</a>
+        ><i18n path="footer.col_1.link3" /></a>
       </div>
       <div class="footer-main">
-        <h4>Partner</h4>
+        <h4><i18n path="footer.col_2.title" /></h4>
         <div class="divider" />
         <a
           href="https://tanglebay.org/forum/"
           target="_blank"
           class="footer-main-link"
-        >Tanglebay.org</a>
+        ><i18n path="footer.col_2.link1" /></a>
 
         <a
           href="https://iotashops.com/"
           target="_blank"
           class="footer-main-link"
-        >IOTAshops.com</a>
+        ><i18n path="footer.col_2.link2" /></a>
         <a
           href="https://iota-news.com/"
           target="_blank"
           class="footer-main-link"
-        >iota-news.com</a>
+        ><i18n path="footer.col_2.link3" /></a>
       </div>
       <div class="footer-main">
-        <h4>IOTA</h4>
+        <h4><i18n path="footer.col_3.title" /></h4>
         <div class="divider" />
         <a
           href="https://www.iota.org"
           target="_blank"
           class="footer-main-link"
-        >Offizielle Webseite</a>
+        ><i18n path="footer.col_3.link1" /></a>
         <a
           href="https://ecosystem.iota.org"
           target="_blank"
           class="footer-main-link"
-        >Ökosystem</a>
+        ><i18n path="footer.col_3.link2" /></a>
         <a
           href="https://blog.iota.org"
           target="_blank"
           class="footer-main-link"
-        >Blog</a>
+        ><i18n path="footer.col_3.link3" /></a>
       </div>
     </div>
     <div class="row footer-bottom">
       <div class="footer-bottom-col">
-        Made with <span class="heart">&#10084;</span> by  
+        <i18n path="footer.copyright" /> <span class="heart">&#10084;</span> by  
         <a
           href="https://www.einfachiota.de/"
           target="_blank"
@@ -138,14 +138,14 @@
           target="_blank"
           class="footer-main-link"
         >
-          Impressum
+          <i18n path="footer.imprint" />
         </a>
         <a
           href="https://www.einfachiota.de/#/privacy"
           target="_blank"
           class="footer-main-link"
         >
-          Datenschutz
+          <i18n path="footer.privacy" />
         </a>
       </div>
     </div>

@@ -18,7 +18,30 @@ export const i18n = new VueI18n({
 			get_trinity: 'Get the IOTA Trinity Wallet',
 			available_tokens: 'Available Tokens',
 			fill: 'Fill the Pot',
-			spend_iota: 'Spend IOTA'
+			spend_iota: 'Spend IOTA',
+			footer: {
+				col_1: {
+					title: 'einfachIOTA',
+					link1: 'Website',
+					link2: 'Blog',
+					link3: 'Magazine'
+				},
+				col_2: {
+					title: 'Partners',
+					link1: 'TangleBay.com',
+					link2: 'IOTAshop.com',
+					link3: 'iota-news.com'
+				},
+				col_3: {
+					title: 'IOTA',
+					link1: 'Offcial Website',
+					link2: 'Ecosystem',
+					link3: 'Blog'
+				},
+				copyright: 'Made with',
+				imprint: 'Imprint',
+				privacy: 'Privacy Policy'
+			}
 		},
 		de: {
 			title: 'iota.gratis',
@@ -31,7 +54,30 @@ export const i18n = new VueI18n({
 			get_trinity: 'Hol dir das IOTA Trinity Wallet',
 			available_tokens: 'Verfügbare Tokens',
 			fill: 'Fülle den Topf',
-			spend_iota: 'Spende IOTA'
+			spend_iota: 'Spende IOTA',
+			footer: {
+				col_1: {
+					title: 'einfachIOTA',
+					link1: 'Webseite',
+					link2: 'Blog',
+					link3: 'Magazin'
+				},
+				col_2: {
+					title: 'Partner',
+					link1: 'TangleBay.com',
+					link2: 'IOTAshop.com',
+					link3: 'iota-news.com'
+				},
+				col_3: {
+					title: 'IOTA',
+					link1: 'Offizielle Webseite',
+					link2: 'Ökosystem',
+					link3: 'Blog'
+				},
+				copyright: 'Gemacht mit',
+				imprint: 'Impressum',
+				privacy: 'Datenschutz'
+			}
 		}
 	}
 });
