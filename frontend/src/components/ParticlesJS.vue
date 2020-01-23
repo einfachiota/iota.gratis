@@ -136,6 +136,7 @@ export default {
 <style>
 #particles-js {
     position:absolute;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
 }
 </style>

@@ -64,7 +64,7 @@ export default {
 .home {
   text-align: center;
   color: #fff;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 }
 .hero {
   margin: 0 10px;
