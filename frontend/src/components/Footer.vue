@@ -2,17 +2,18 @@
   <div class="footer">
     <div class="row">
       <div class="footer-main">
-        <router-link
-          to="/"
+        <a
+          href="https://www.einfachiota.de/#/"
           class="footer-logo"
           exact-active-class="active"
+          target="_blank"
         >
           <img
             alt="einfachIOTA"
             class="logo"
             src="../assets/logo.svg"
           >
-        </router-link>
+        </a>
       </div>
       <div class="footer-main">
         <h4>einfachIOTA.de</h4>
@@ -75,7 +76,17 @@
     </div>
     <div class="row footer-bottom">
       <div class="footer-bottom-col">
-        © einfachIOTA
+        Made with <span class="heart">&#10084;</span> by  
+        <a
+          href="https://www.einfachiota.de/"
+          target="_blank"
+          class="footer-link"
+        >einfachIOTA</a>&
+        <a
+          href="https://www.iota-news.com"
+          target="_blank"
+          class="footer-link"
+        >IOTA News</a>
       </div>
       <div class="footer-bottom-col">
         <a
@@ -169,6 +180,9 @@ export default {
   text-align: center;
   border-top: 5px solid var(--primary);
   color: var(--dark);
+  .heart {
+    color: red;
+  }
   .row {
     display: flex;
     justify-content: space-between;
@@ -221,6 +235,15 @@ export default {
         &:last-child {
           margin-right: 0;
         }
+      }
+    }
+    .footer-link {
+      color: rgba(0, 0, 0, 0.75);
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+      font-size: 1.2em;
+      &:hover {
+        color: var(--primary);
       }
     }
     .footer-main-link {
