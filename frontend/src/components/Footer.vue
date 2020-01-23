@@ -16,23 +16,23 @@
         </a>
       </div>
       <div class="footer-main">
-        <h4>einfachIOTA.de</h4>
+        <h4>einfachIOTA</h4>
         <div class="divider" />
         <a
-          href="https://www.einfachiota.de/#/news"
+          href="https://www.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-        >Neuigkeiten</a>
+        >Webseite</a>
         <a
-          href="https://www.einfachiota.de/#/knowledge"
+          href="https://blog.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-        >Wissen</a>
+        >Blog</a>
         <a
-          href="https://www.einfachiota.de/#/projects"
+          href="https://magazin.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-        >Projekte</a>
+        >Magazin</a>
       </div>
       <div class="footer-main">
         <h4>Partner</h4>
@@ -133,18 +133,20 @@
 
 
       <div class="footer-bottom-col">
-        <router-link
-          to="imprint"
+        <a
+          href="https://www.einfachiota.de/#/imprint"
+          target="_blank"
           class="footer-main-link"
         >
           Impressum
-        </router-link>
-        <router-link
-          to="privacy"
+        </a>
+        <a
+          href="https://www.einfachiota.de/#/privacy"
+          target="_blank"
           class="footer-main-link"
         >
           Datenschutz
-        </router-link>
+        </a>
       </div>
     </div>
   </div>
