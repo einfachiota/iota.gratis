@@ -14,9 +14,10 @@ VALUE=1
 debug=basic
 socket_origins=http://localhost:* http://localhost:* http://127.0.0.1:* http://192.168.178.22:* http://192.168.178.22:* https://faucet.einfachiota.de:*
 allowed_origins=http://localhost:8080, http://localhost:5000, http://192.168.178.22:5000, http://192.168.178.22:8080, https://faucet.einfachiota.de
-maxPayoutsPerIP=20
+maxPayoutsPerIP=1
 minPayoutIntervalinSeconds=20
 maxPayoutRequestsPerMinute=6
+minPaymentIntervals=60
 ```
 
 Create a .env in the frontend folder with an URL, all requests will be sent to it
