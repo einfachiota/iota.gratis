@@ -38,14 +38,15 @@
       :class="{ open: navStateOpen }"
       class="nav-menu"
     >
-      <router-link
-        to=""
+      <a
+        href="https://trinity.iota.org/"
         class="nav-item"
+        target="_blank"
         active-class="active"
         @click.native="navStateOpen = false"
       >
-        <span>Home</span>
-      </router-link>
+        <span>IOTA Wallet</span>
+      </a>
     </div>
   </nav>
 </template>
