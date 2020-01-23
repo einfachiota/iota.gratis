@@ -112,7 +112,7 @@ export default {
       opacity: 1;
       img.logo {
         width: auto;
-        height: 50px;
+        height: 30px;
         transition: all 200ms ease-in-out;
       }
     }
@@ -166,6 +166,7 @@ export default {
 
 @media only screen and (max-width: 992px) {
   .main-nav {
+    margin-top: 0;
     &.open {
       background-color: var(--white);
       &.normal {
@@ -191,7 +192,7 @@ export default {
           position: absolute;
           height: 3px;
           width: 100%;
-          background-color: var(--dark);
+          background-color: var(--light);
           border-radius: var(--border-radius-sm);
           transition: all 300ms ease-in-out;
         }
@@ -217,6 +218,9 @@ export default {
         .bottom {
           transform: rotate(-45deg);
           bottom: 13px;
+        }
+        span {
+          background-color: var(--dark);
         }
       }
       &:hover {
@@ -249,6 +253,10 @@ export default {
       .nav-item {
         height: 100px;
         border-bottom: var(--border-sm_light);
+        color: var(--dark);
+        .logo {
+          height: 1px;
+        }
         &:first-child {
           border-top: var(--border-sm_light);
         }
