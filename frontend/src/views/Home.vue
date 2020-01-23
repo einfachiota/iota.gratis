@@ -2,7 +2,7 @@
   <div class="home">
     <div class="hero">
       <h1 class="heading">
-        Hol dir deine ersten IOTA Token gratis!
+        <i18n path="headline" />
       </h1>
     </div>
 
@@ -13,9 +13,11 @@
     </div>
     <div class="section">
       <div class="container">
-        <p class="tokens">Verfügbare Tokens: {{ total_tokens }}</p>
-        <h2>Fülle den Topf</h2>
-        <iota-payment>Spende IOTA</iota-payment>
+        <p class="tokens">
+          <i18n path="available_tokens" />: {{ total_tokens }}
+        </p>
+        <h2><i18n path="fill" /></h2>
+        <iota-payment><i18n path="spend_iota" /></iota-payment>
       </div>
     </div>
   </div>

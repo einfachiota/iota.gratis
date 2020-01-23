@@ -4,6 +4,7 @@
       <NavBar />
     </el-header>
     <el-main>
+      <particlesJS />
       <router-view />
     </el-main>
     <el-footer>
@@ -15,8 +16,10 @@
 <script>
 import NavBar from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
+import particlesJS from '@/components/ParticlesJS.vue';
+
 export default {
-	components: { NavBar, Footer }
+	components: { NavBar, Footer, particlesJS }
 };
 </script>
 

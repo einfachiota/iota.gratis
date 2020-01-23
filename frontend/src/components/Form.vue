@@ -11,18 +11,18 @@
       prop="address"
     >
       <el-input
-        class="address_input"
         v-model="ruleForm.address"
+        class="address_input"
         type="text"
         autocomplete="off"
-        :placeholder="`Füge hier deine IOTA Empfänger Adress ein`"
+        :placeholder="$t('address_palceholder')"
       />
     </el-form-item>
-    <p>IOTA ist gebührenfrei!</p>
+    <p><i18n path="iota_is_free" /></p>
 
     <div v-if="payout_sent && txhash.length !== 81">
       <p>
-        Du kannst die Transaktion auf <a
+        <i18n path="tx_on_thetangle" /> <a
           v-if="network == 'Devnet'"
           :href="'https://devnet.thetangle.org/address/' + ruleForm.address"
           target="_blank"
@@ -31,12 +31,12 @@
           v-else
           :href="'https://thetangle.org/address/' + ruleForm.address"
           target="_blank"
-        >TheTange.org</a> verfolgen.
+        >TheTange.org</a> .
       </p>
     </div>
     <div v-else-if="txhash.length === 81">
       <p>
-        Transaktion gesendet: <a
+        <i18n path="tx_on_thetangle" />: <a
           v-if="network == 'Devnet'"
           :href="'https://devnet.thetangle.org/transaction/' + txhash"
           target="_blank"
@@ -68,15 +68,21 @@
         type="primary"
         @click="send('ruleForm')"
       >
-        Gratis IOTA anfordern!
+        <i18n path="get_free_iota" />
       </el-button>
     </el-form-item>
-    <router-link class="link" to="about">
-      Wie funktioniert das?
+    <router-link
+      class="link"
+      to="about"
+    >
+      <i18n path="how_it_works" />
     </router-link>
     <div>
       <br>
-      <a href="https://trinity.iota.org/" target="_blank">Hol dir das IOTA Trinity Wallet</a>
+      <a
+        href="https://trinity.iota.org/"
+        target="_blank"
+      ><i18n path="get_trinity" /></a>
       <br>
     </div>
   </el-form>
