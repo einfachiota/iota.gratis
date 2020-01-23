@@ -72,13 +72,13 @@
     </el-form-item>
     <br>
     <br>
-    <router-link
+    <a
       class="link"
       target="_blank"
-      to="https://trinity.iota.org/"
+      href="https://trinity.iota.org/"
     >
       <i18n path="get_trinity" />
-    </router-link>
+    </a>
     <br>
     <router-link
       class="link"
