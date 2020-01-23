@@ -105,6 +105,9 @@ export default {
 			//accept any 81 tryte string as address, only for devnet
 			if(this.network == 'Devnet'){
 				let match = /[A-Z+9]{81}/.exec(address);
+				if(match == null){
+					return callback(new Error('Bitte gib eine IOTA Adresse an.'));
+				}
 				address = addChecksum(address.slice(match.index, match.index+81));
 				this.ruleForm.address = address;
 			} else {
