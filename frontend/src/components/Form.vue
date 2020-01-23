@@ -7,9 +7,7 @@
     label-width="120px"
     label-position="top"
   >
-    <el-form-item
-      prop="address"
-    >
+    <el-form-item prop="address">
       <el-input
         v-model="ruleForm.address"
         class="address_input"
@@ -18,11 +16,11 @@
         :placeholder="$t('address_palceholder')"
       />
     </el-form-item>
-    <p><i18n path="iota_is_free" /></p>
 
     <div v-if="payout_sent && txhash.length !== 81">
       <p>
-        <i18n path="tx_on_thetangle" /> <a
+        <i18n path="tx_on_thetangle" />
+        <a
           v-if="network == 'Devnet'"
           :href="'https://devnet.thetangle.org/address/' + ruleForm.address"
           target="_blank"
@@ -36,7 +34,8 @@
     </div>
     <div v-else-if="txhash.length === 81">
       <p>
-        <i18n path="tx_on_thetangle" />: <a
+        <i18n path="tx_on_thetangle" />:
+        <a
           v-if="network == 'Devnet'"
           :href="'https://devnet.thetangle.org/transaction/' + txhash"
           target="_blank"
@@ -71,27 +70,32 @@
         <i18n path="get_free_iota" />
       </el-button>
     </el-form-item>
+    <br>
+    <br>
+    <router-link
+      class="link"
+      target="_blank"
+      to="https://trinity.iota.org/"
+    >
+      <i18n path="get_trinity" />
+    </router-link>
+    <br>
     <router-link
       class="link"
       to="about"
     >
       <i18n path="how_it_works" />
     </router-link>
-    <div>
-      <br>
-      <a
-        href="https://trinity.iota.org/"
-        target="_blank"
-      ><i18n path="get_trinity" /></a>
-      <br>
-    </div>
+    <br>
+
+    <br>
   </el-form>
 </template>
 
 <script>
 import axios from 'axios';
-import {isValidChecksum, addChecksum} from '@iota/checksum';
-import {isTrytes} from '@iota/validators';
+import { isValidChecksum, addChecksum } from '@iota/checksum';
+import { isTrytes } from '@iota/validators';
 import io from 'socket.io-client';
 const socket = io(process.env.VUE_APP_URL, {
 	path: '/iotapay/socket'
@@ -101,14 +105,14 @@ export default {
 	name: 'Form',
 	data() {
 		var validateAddress = (rule, address, callback) => {
-			console.log('address:',address);
+			console.log('address:', address);
 			//accept any 81 tryte string as address, only for devnet
-			if(this.network == 'Devnet'){
+			if (this.network == 'Devnet') {
 				let match = /[A-Z+9]{81}/.exec(address);
-				if(match == null){
+				if (match == null) {
 					return callback(new Error('Bitte gib eine IOTA Adresse an.'));
 				}
-				address = addChecksum(address.slice(match.index, match.index+81));
+				address = addChecksum(address.slice(match.index, match.index + 81));
 				this.ruleForm.address = address;
 			} else {
 				address = address.trim();
@@ -118,9 +122,12 @@ export default {
 
 			if (!address) {
 				return callback(new Error('Bitte gib eine IOTA Adresse an.'));
-			} else if (!isTrytes(address) || address.length != 90 && address.length != 81) {
+			} else if (
+				!isTrytes(address) ||
+        (address.length != 90 && address.length != 81)
+			) {
 				callback(new Error('Dies ist keine gültige IOTA Adresse'));
-			} else if(address.length == 90 && !isValidChecksum(address)){
+			} else if (address.length == 90 && !isValidChecksum(address)) {
 				callback(new Error('Ungültige Checksumme'));
 			} else {
 				callback();
@@ -144,30 +151,30 @@ export default {
 			}
 		};
 	},
-	created(){
+	created() {
 		let self = this;
-		socket.on('payouts', function (data) {
+		socket.on('payouts', function(data) {
 			self.txhash = data.payout.txhash;
 		});
 	},
 	methods: {
 		send(formName) {
-			this.$refs[formName].validate((valid) => {
+			this.$refs[formName].validate(valid => {
 				if (valid) {
 					console.log('submit!', this.ruleForm);
 					let self = this;
 					this.ruleForm.errors = [];
 					axios
-						.post(process.env.VUE_APP_URL+'/pay_tokens', this.ruleForm)
+						.post(process.env.VUE_APP_URL + '/pay_tokens', this.ruleForm)
 						.then(response => {
 							console.log('response', response);
 							//exit if max amount reached
-							if(response.data.type == 'cantsend'){
+							if (response.data.type == 'cantsend') {
 								this.cantsendmsg = response.data.msg;
 								this.cantsendpayout = true;
 								return;
 							}
-							if(response.data.type == 'error'){
+							if (response.data.type == 'error') {
 								this.cantsendmsg = response.data.msg;
 								this.error = true;
 								return;
@@ -177,14 +184,17 @@ export default {
 							let data = response.data;
 							if (!data) {
 								self.ruleForm.errors.push('Invalid data');
-							} else if(data === 'Invalid address') {
+							} else if (data === 'Invalid address') {
 								self.ruleForm.errors.push('Invalid address');
 								console.log('Server responded with invalid address');
 							} else if (data.address) {
-								socket.emit('storeClientInfo', { paymentOrPayoutId: response.data.id });
+								socket.emit('storeClientInfo', {
+									paymentOrPayoutId: response.data.id
+								});
 								self.payout_sent = true;
 							}
-						}).catch(err => {
+						})
+						.catch(err => {
 							console.log('err', err);
 						});
 				} else {
@@ -193,7 +203,7 @@ export default {
 				}
 			});
 		},
-		changePayoutValue(value){
+		changePayoutValue(value) {
 			this.ruleForm.value = value.srcElement.value;
 		}
 	}
@@ -256,8 +266,8 @@ a {
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
   &:hover {
     opacity: 1;
   }
@@ -274,9 +284,16 @@ a {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #4CAF50;
+    background: #4caf50;
     cursor: pointer;
   }
 }
 
+.link {
+  text-decoration: none;
+  z-index: 1000;
+  :hover {
+    color: var(--iota-yellow);
+  }
+}
 </style>
