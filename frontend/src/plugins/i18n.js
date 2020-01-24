@@ -19,6 +19,14 @@ export const i18n = new VueI18n({
 			available_tokens: 'Available Tokens',
 			fill: 'Fill the Pot',
 			spend_iota: 'Spend IOTA',
+			about:{
+				heading: 'The IOTA Faucet explained',
+				subheading: 'Simply send IOTA tokens!',
+				gratislink: 'IOTA.gratis Code on Github.',
+				modulelink1: 'The',
+				modulelink2: 'iotapayment module',
+				modulelink3: 'runs in the background.'
+			},
 			footer: {
 				col_1: {
 					title: 'einfachIOTA',
@@ -55,6 +63,14 @@ export const i18n = new VueI18n({
 			available_tokens: 'Verfügbare Tokens',
 			fill: 'Fülle den Topf',
 			spend_iota: 'Spende IOTA',
+			about:{
+				heading: 'Das IOTA Faucet erklärt',
+				subheading: 'Sende einfach IOTA Tokens!',
+				gratislink: 'IOTA.gratis Code auf Github.',
+				modulelink1: 'Im Hintergrund läuft das',
+				modulelink2: 'iota-payment Module',
+				modulelink3: '.'
+			},
 			footer: {
 				col_1: {
 					title: 'einfachIOTA',
