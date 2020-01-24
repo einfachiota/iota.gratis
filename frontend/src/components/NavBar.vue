@@ -43,7 +43,7 @@
         class="nav-item"
         target="_blank"
         active-class="active"
-        @click.native="navStateOpen = false"
+        @click="navStateOpen = false"
       >
         <span>IOTA Wallet</span>
       </a>
