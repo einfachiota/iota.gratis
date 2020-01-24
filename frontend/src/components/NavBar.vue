@@ -82,7 +82,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   transition: all 200ms ease-in-out;
-  margin-top: 80px;
   .menu-btn {
     display: none;
   }

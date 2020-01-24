@@ -151,6 +151,14 @@ button.el-button.el-button--light {
     padding: 0 30px;
     box-sizing: border-box;
   }
+  .el-button {
+  font-family: "Roboto Slab" !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 10px 20px !important;
+  border: none !important;
+  font-size: 1.1rem !important;
+  }
   h1 {
     font-size: 42px;
     line-height: 1.25;

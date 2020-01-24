@@ -10,7 +10,7 @@ export const i18n = new VueI18n({
 		en:{
 			title: 'iota.credit',
 			headline: 'Get your first IOTA token for free!',
-			address_palceholder: 'Add your IOTA recipient address here',
+			address_palceholder: 'Your IOTA address',
 			iota_is_free: 'IOTA is feeless!',
 			tx_on_thetangle: 'Watch transaction on',
 			get_free_iota: 'Get your free IOTA!',
@@ -46,7 +46,7 @@ export const i18n = new VueI18n({
 		de: {
 			title: 'iota.gratis',
 			headline: 'Hol dir deine ersten IOTA Token gratis!',
-			address_palceholder: 'Füge hier deine IOTA Empfänger Adress ein',
+			address_palceholder: 'Deine IOTA Adresse',
 			iota_is_free: 'IOTA ist gebührenfrei!',
 			tx_on_thetangle: 'Verfolge die Transaktion auf',
 			get_free_iota: 'Gratis IOTA anfordern!',
