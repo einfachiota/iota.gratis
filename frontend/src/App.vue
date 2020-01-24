@@ -1,10 +1,10 @@
 <template>
   <el-container>
+    <particlesJS />
     <el-header>
       <NavBar />
     </el-header>
     <el-main>
-      <particlesJS />
       <router-view />
     </el-main>
     <el-footer>

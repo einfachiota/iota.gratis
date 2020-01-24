@@ -113,7 +113,7 @@ export default {
 }
 
 .container{
-  padding-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .tokens {
