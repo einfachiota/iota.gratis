@@ -74,7 +74,6 @@ export default {
   margin-top: 15vh;
 }
 .section {
-  padding: 80px 0;
   &-background {
     background-color: var(--light);
     p {
@@ -111,6 +110,10 @@ export default {
       background-color: var(--gratis-yellow-light);
     }
   }
+}
+
+.container{
+  padding-bottom: 30px;
 }
 
 .tokens {

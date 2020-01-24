@@ -33,6 +33,7 @@
 
 <style lang="scss">
  .black {
+   padding-top: 30px;
   color: var(--dark);
   a{
     color: black;

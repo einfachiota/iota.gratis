@@ -33,7 +33,7 @@ body {
   color: var(--dark);
   background-image: url('~@/assets/background.svg');
   background-size:cover;
-  height: 100vh;
+  height: 100%;
 }
 h1,
 h2,
