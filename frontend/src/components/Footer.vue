@@ -38,7 +38,7 @@
         <h4><i18n path="footer.col_2.title" /></h4>
         <div class="divider" />
         <a
-          href="https://tanglebay.org/forum/"
+          href="https://tanglebay.org/"
           target="_blank"
           class="footer-main-link"
         ><i18n path="footer.col_2.link1" /></a>
