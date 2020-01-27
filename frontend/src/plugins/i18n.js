@@ -81,7 +81,7 @@ export const i18n = new VueI18n({
 				col_2: {
 					title: 'Partner',
 					link1: 'TangleBay.org',
-					link2: 'IOTAshop.com',
+					link2: 'IOTAshops.com',
 					link3: 'iota-news.com'
 				},
 				col_3: {
