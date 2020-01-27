@@ -3,6 +3,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
+import VueYouTubeEmbed from 'vue-youtube-embed';
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -11,6 +12,7 @@ import {i18n} from './plugins/i18n';
 import IotaPayment from 'vue-iota-payment';
 
 Vue.use(IotaPayment, { store, url: process.env.VUE_APP_URL, path: '/iotapay' });
+Vue.use(VueYouTubeEmbed, { global: true });
 
 Vue.config.productionTip = false;
 
