@@ -47,6 +47,9 @@
       >
         <span>IOTA Wallet</span>
       </a>
+  
+      <iota-payment><i18n path="spend_iota" /></iota-payment>
+
     </div>
   </nav>
 </template>
@@ -149,6 +152,26 @@ export default {
     }
   }
 }
+
+button {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+    color: #FFF;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
+    background-color: var(--gratis-yellow);
+    box-shadow: var(--light);
+    cursor: pointer;
+    margin-right: 20px;
+    &:hover {
+      background-color: var(--gratis-yellow-light);
+    }
+  }
 
 // ------------------------------------------
 //  M O B I L E

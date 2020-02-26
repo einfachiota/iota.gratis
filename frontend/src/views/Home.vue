@@ -16,8 +16,6 @@
         <p class="tokens">
           <i18n path="available_tokens" />: {{ total_tokens }}
         </p>
-        <h2><i18n path="fill" /></h2>
-        <iota-payment><i18n path="spend_iota" /></iota-payment>
       </div>
     </div>
   </div>
