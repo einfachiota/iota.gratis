@@ -16,7 +16,12 @@
         :placeholder="$t('address_palceholder')"
       />
     </el-form-item>
-
+    <router-link
+          class="link"
+          to="about"
+        >
+          <i18n path="how_it_works" />
+    </router-link>
     <div v-if="payout_sent && txhash.length !== 81">
       <p>
         <i18n path="tx_on_thetangle" />
@@ -70,25 +75,6 @@
         <i18n path="get_free_iota" />
       </el-button>
     </el-form-item>
-    <br>
-    <br>
-    <a
-      class="link"
-      target="_blank"
-      href="https://trinity.iota.org/"
-    >
-      <i18n path="get_trinity" />
-    </a>
-    <br>
-    <router-link
-      class="link"
-      to="about"
-    >
-      <i18n path="how_it_works" />
-    </router-link>
-    <br>
-
-    <br>
   </el-form>
 </template>
 

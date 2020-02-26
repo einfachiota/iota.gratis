@@ -11,13 +11,6 @@
         <Form />
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <p class="tokens">
-          <i18n path="available_tokens" />: {{ total_tokens }}
-        </p>
-      </div>
-    </div>
   </div>
 </template>
 
