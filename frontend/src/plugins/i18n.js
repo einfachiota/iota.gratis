@@ -90,7 +90,7 @@ export const i18n = new VueI18n({
 					link2: 'Ökosystem',
 					link3: 'Blog'
 				},
-				copyright: 'Gemacht mit',
+				copyright: 'Mit  gemacht durch',
 				imprint: 'Impressum',
 				privacy: 'Datenschutz'
 			}

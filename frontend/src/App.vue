@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Slab:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400, 800");
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -40,8 +40,7 @@ h2,
 h3,
 h4 {
   margin: 0;
-  font-weight: 700;
-  font-family: "Roboto Slab", serif;
+  font-weight: 800;
 }
 h1 {
   font-size: 62px;
@@ -90,7 +89,7 @@ p {
   padding: 0 0 !important;
 }
 .el-button {
-  font-family: "Roboto Slab" !important;
+  font-family: "Open Sans" !important;
   font-weight: bold !important;
   text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
@@ -152,7 +151,7 @@ button.el-button.el-button--light {
     box-sizing: border-box;
   }
   .el-button {
-  font-family: "Roboto Slab" !important;
+  font-family: "Open Sans" !important;
   font-weight: bold !important;
   text-transform: uppercase !important;
   padding: 10px 20px !important;

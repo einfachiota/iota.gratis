@@ -99,7 +99,7 @@ export default {
     justify-content: center;
     align-items: center;
     color: var(--light);
-    font-family: "Roboto Slab";
+    font-family: "Open Sans";
     font-weight: bold;
     text-decoration: none;
     opacity: 0.75;

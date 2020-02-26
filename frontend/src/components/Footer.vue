@@ -76,7 +76,7 @@
     </div>
     <div class="row footer-bottom">
       <div class="footer-bottom-col">
-        <i18n path="footer.copyright" /> <span class="heart">&#10084;</span> by  
+        <i18n path="footer.copyright" /> <span class="heart">&#10084;</span>  
         <a
           href="https://www.einfachiota.de/"
           target="_blank"
@@ -154,6 +154,13 @@
 
 <script>
 export default {
+	data() {
+		return {
+			metaInfo: {
+				title: this.$i18n.t('blog'),
+			},
+		};
+	},
 	mounted() {
 		console.log('mounted');
 		let userLang = navigator.language || navigator.userLanguage; 
