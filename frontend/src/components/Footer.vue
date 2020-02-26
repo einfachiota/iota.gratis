@@ -14,6 +14,7 @@
             src="../assets/logo.svg"
           >
         </a>
+        <a class="footer-main-link" href="">An einfachIOTA Project</a>
       </div>
       <div class="footer-main">
         <h4><i18n path="footer.col_1.title" /></h4>
@@ -78,7 +79,7 @@
       <div class="footer-bottom-col">
         <i18n path="footer.copyright" /> <span class="heart">&#10084;</span>  
         <a
-          href="https://www.einfachiota.de/"
+          href="https://www.einfachiota.com"
           target="_blank"
           class="footer-link"
         >einfachIOTA</a>&
@@ -247,10 +248,10 @@ export default {
       }
     }
     .footer-link {
-      color: rgba(0, 0, 0, 0.75);
+      color: var(--dark);
       text-decoration: none;
       transition: color 200ms ease-in-out;
-      font-size: 1.2em;
+      font-size: 16px;
       &:hover {
         color: var(--primary);
       }

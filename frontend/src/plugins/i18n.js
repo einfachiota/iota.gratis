@@ -14,7 +14,7 @@ export const i18n = new VueI18n({
 			iota_is_free: 'IOTA is feeless!',
 			tx_on_thetangle: 'Watch transaction on',
 			get_free_iota: 'Get your free IOTA!',
-			how_it_works: 'How does it work?',
+			how_it_works: 'How does work?',
 			get_trinity: 'Get the IOTA Trinity Wallet',
 			available_tokens: 'Available Tokens',
 			fill: 'Donate',
@@ -90,7 +90,7 @@ export const i18n = new VueI18n({
 					link2: 'Ökosystem',
 					link3: 'Blog'
 				},
-				copyright: 'Mit  gemacht durch',
+				copyright: 'Gemacht mit',
 				imprint: 'Impressum',
 				privacy: 'Datenschutz'
 			}

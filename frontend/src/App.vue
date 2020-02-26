@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400, 800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;

@@ -233,7 +233,6 @@ form {
 a {
   margin: 5px;
   border: 2px solid transparent;
-  font-size: 1.5em;
   font-weight: 300;
   line-height: 20px;
   white-space: nowrap;
@@ -278,6 +277,7 @@ a {
 .link {
   text-decoration: none;
   z-index: 1000;
+  font-size: 1.5em;
   :hover {
     color: var(--iota-yellow);
   }
