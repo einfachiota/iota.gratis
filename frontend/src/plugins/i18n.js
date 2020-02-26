@@ -17,7 +17,7 @@ export const i18n = new VueI18n({
 			how_it_works: 'How does the faucet work?',
 			get_trinity: 'Get the IOTA Trinity Wallet',
 			available_tokens: 'Available Tokens',
-			fill: 'Fill the Pot',
+			fill: 'Donate',
 			spend_iota: 'Spend IOTA',
 			about:{
 				heading: 'The IOTA faucet explained',
@@ -61,7 +61,7 @@ export const i18n = new VueI18n({
 			how_it_works: 'Wie funktioniert das Faucet?',
 			get_trinity: 'Hol dir das IOTA Trinity Wallet',
 			available_tokens: 'Verfügbare Tokens',
-			fill: 'Fülle den Topf',
+			fill: 'Spenden',
 			spend_iota: 'Spende IOTA',
 			about:{
 				heading: 'Das IOTA Faucet erklärt',
